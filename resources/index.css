@@ -12,6 +12,7 @@ html {
     background-color: black;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -109,4 +110,42 @@ header nav a li:hover {
 
 #tea-of-the-month #tea-container .item h4 {
     margin-top: 10px;
+}
+
+#locations {
+    height: 872.2px;
+    display: flex;
+    background-image: url(/resources/pics/img-locations-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#locations h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#locations #addresses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+#locations #addresses .address {
+    background-color: black;
+    padding: 20px;
+    width: 300px;
+    margin: 40px;
+}
+
+#locations #addresses .address h3,
+#locations #addresses .address p {
+    padding: 10px;
+    text-align: center;
 }

@@ -20,6 +20,10 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: black;
 }
 
 #logo {
@@ -46,6 +50,7 @@ header nav a li:hover {
 }
 
 #mission {
+    margin-top: 70px;
     height: 872.2px;
     display: flex;
     background-image: url(/resources/pics/img-mission-background.jpg);
@@ -54,11 +59,54 @@ header nav a li:hover {
     background-size: cover;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #mission #description {
     background-color: black;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+}
+
+#mission #description h2,
+#mission #description h4 {
+    text-align: center;
+    padding: 5px;
+}
+
+#tea-of-the-month {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+#tea-of-the-month h2,
+#tea-of-the-month h4 {
+    text-align: center;
+    margin: 5px;
+}
+
+#tea-of-the-month #tea-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#tea-of-the-month #tea-container .item {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+#tea-of-the-month #tea-container .item img {
+    height: 200px;
+    width: 300px;
+}
+
+#tea-of-the-month #tea-container .item h4 {
+    margin-top: 10px;
 }
